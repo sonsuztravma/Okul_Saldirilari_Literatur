@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okul Saldırıları ve Şiddet: Travma Odaklı Literatür | travmaduyarli.com</title>
+    <meta name="description" content="Okul saldırıları ve şiddet üzerine travma odaklı 19 akademik kaynak kitabın Türkçe özetleri, kapakları ve satın alma bağlantıları. travmaduyarli.com tarafından hazırlanmıştır.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #070d1f;
+            --bg-surface: #0f1729;
+            --bg-card: #111827;
+            --bg-card-hover: #161f35;
+            --border-subtle: rgba(255,255,255,0.06);
+            --border-accent: rgba(99,102,241,0.35);
+            --accent-start: #6366f1;
+            --accent-end: #a855f7;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #4b5c77;
+            --text-accent: #818cf8;
+            --shadow-card: 0 4px 24px rgba(0,0,0,0.5);
+            --shadow-hover: 0 12px 48px rgba(99,102,241,0.2);
+            --radius: 18px;
+            --radius-sm: 10px;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 15% 15%, rgba(99,102,241,0.09) 0%, transparent 45%),
+                radial-gradient(ellipse at 85% 80%, rgba(168,85,247,0.07) 0%, transparent 45%),
+                radial-gradient(ellipse at 50% 50%, rgba(6,182,212,0.03) 0%, transparent 60%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            position: relative;
+            z-index: 1;
+            padding: 64px 24px 44px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-subtle);
+            background: linear-gradient(180deg, rgba(99,102,241,0.06) 0%, transparent 100%);
+        }
+
+        .header-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 18px;
+            border-radius: 100px;
+            background: rgba(99,102,241,0.12);
+            border: 1px solid rgba(99,102,241,0.28);
+            color: var(--text-accent);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.9rem, 5vw, 3.4rem);
+            font-weight: 700;
+            background: linear-gradient(130deg, #f1f5f9 0%, #a5b4fc 45%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+            margin-bottom: 14px;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.65;
+        }
+
+        .header-credit {
+            margin-top: 22px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .header-credit a {
+            color: #a5b4fc;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(165,180,252,0.35);
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .header-credit a:hover {
+            color: #c084fc;
+            border-color: rgba(192,132,252,0.6);
+        }
+
+        /* ─── MAIN ─── */
+        main {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            padding: 48px 24px 64px;
+            max-width: 1440px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        /* ─── BOOK CARD ─── */
+        .book-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--shadow-card);
+            transition: transform 0.32s cubic-bezier(.22,1,.36,1), box-shadow 0.32s ease, border-color 0.32s ease;
+            animation: fadeInUp 0.5s ease both;
+        }
+
+        .book-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--border-accent);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(28px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Cover */
+        .card-cover-link {
+            display: block;
+            height: 290px;
+            background: linear-gradient(135deg, #1a2540 0%, #0d1628 100%);
+            overflow: hidden;
+            position: relative;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .card-cover-link img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 14px;
+            transition: transform 0.4s cubic-bezier(.22,1,.36,1);
+        }
+
+        .card-cover-link:hover img { transform: scale(1.06); }
+
+        .cover-overlay {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            background: linear-gradient(to top, rgba(7,13,31,0.96) 0%, rgba(7,13,31,0.5) 50%, transparent 100%);
+            padding: 28px 14px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: #fbbf24;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .card-cover-link:hover .cover-overlay { opacity: 1; }
+
+        /* Card Body */
+        .card-body {
+            padding: 18px 18px 20px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .card-title-en {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.4;
+            margin-bottom: 5px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-title-tr {
+            font-size: 0.77rem;
+            color: var(--text-accent);
+            font-style: italic;
+            line-height: 1.35;
+            margin-bottom: 13px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            opacity: 0.85;
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border-subtle);
+            margin-bottom: 13px;
+        }
+
+        .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        .meta-chip {
+            font-size: 0.67rem;
+            padding: 3px 10px;
+            border-radius: 100px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 180px;
+        }
+
+        .meta-chip.year {
+            background: rgba(99,102,241,0.1);
+            border-color: rgba(99,102,241,0.22);
+            color: var(--text-accent);
+        }
+
+        /* Buttons */
+        .card-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: auto;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 9px 10px;
+            border-radius: var(--radius-sm);
+            border: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.71rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            transition: all 0.22s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .btn-short {
+            background: rgba(99,102,241,0.1);
+            border: 1px solid rgba(99,102,241,0.25);
+            color: #a5b4fc;
+        }
+
+        .btn-short:hover {
+            background: rgba(99,102,241,0.22);
+            border-color: rgba(99,102,241,0.5);
+            transform: translateY(-2px);
+        }
+
+        .btn-long {
+            background: linear-gradient(135deg, rgba(99,102,241,0.85), rgba(168,85,247,0.85));
+            color: white;
+        }
+
+        .btn-long:hover {
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 18px rgba(99,102,241,0.45);
+        }
+
+        /* ─── MODAL ─── */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(4, 7, 20, 0.82);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 200;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.28s ease;
+        }
+
+        .modal-backdrop.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .modal-panel {
+            background: #131d32;
+            border: 1px solid rgba(99,102,241,0.18);
+            border-radius: 22px;
+            width: 100%;
+            max-width: 700px;
+            max-height: 88vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 32px 100px rgba(0,0,0,0.7), 0 0 0 1px rgba(99,102,241,0.1);
+            transform: scale(0.9) translateY(24px);
+            transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+        }
+
+        .modal-backdrop.visible .modal-panel {
+            transform: scale(1) translateY(0);
+        }
+
+        .modal-header {
+            padding: 24px 24px 18px;
+            border-bottom: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .modal-icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.15rem;
+            margin-top: 2px;
+        }
+
+        .modal-icon.short {
+            background: rgba(99,102,241,0.15);
+            border: 1px solid rgba(99,102,241,0.3);
+        }
+
+        .modal-icon.long {
+            background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(168,85,247,0.2));
+            border: 1px solid rgba(168,85,247,0.35);
+        }
+
+        .modal-titles { flex: 1; min-width: 0; }
+
+        .modal-type-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .modal-type-label.short { color: #818cf8; }
+        .modal-type-label.long  { color: #c084fc; }
+
+        .modal-book-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.35;
+            margin-bottom: 3px;
+        }
+
+        .modal-book-tr {
+            font-size: 0.78rem;
+            color: var(--text-accent);
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        .modal-close {
+            flex-shrink: 0;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: 1px solid var(--border-subtle);
+            background: rgba(255,255,255,0.04);
+            color: var(--text-muted);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            margin-top: 2px;
+        }
+
+        .modal-close:hover {
+            background: rgba(255,255,255,0.1);
+            color: var(--text-primary);
+            border-color: rgba(255,255,255,0.15);
+        }
+
+        .modal-body {
+            padding: 24px;
+            overflow-y: auto;
+            flex: 1;
+            color: var(--text-secondary);
+            font-size: 0.93rem;
+            line-height: 1.85;
+        }
+
+        .modal-body p { margin-bottom: 14px; }
+        .modal-body p:last-child { margin-bottom: 0; }
+
+        /* Loading */
+        .loading-dots {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .loading-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--accent-start);
+            animation: dotBounce 1.2s infinite ease-in-out;
+        }
+
+        .loading-dot:nth-child(2) { animation-delay: 0.2s; background: #8b5cf6; }
+        .loading-dot:nth-child(3) { animation-delay: 0.4s; background: var(--accent-end); }
+
+        @keyframes dotBounce {
+            0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+            40% { transform: translateY(-10px); opacity: 1; }
+        }
+
+        /* No summary placeholder */
+        .no-summary {
+            background: rgba(99,102,241,0.05);
+            border: 1px dashed rgba(99,102,241,0.25);
+            border-radius: 14px;
+            padding: 32px 24px;
+            text-align: center;
+        }
+
+        .no-summary .ns-icon { font-size: 2.4rem; margin-bottom: 12px; }
+        .no-summary .ns-title { font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 6px; }
+        .no-summary .ns-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; }
+        .no-summary .ns-file { font-size: 0.78rem; color: var(--text-accent); margin-top: 10px; font-family: monospace; background: rgba(99,102,241,0.1); padding: 4px 12px; border-radius: 6px; display: inline-block; }
+
+        /* CORS warning */
+        .cors-warning {
+            background: rgba(245,158,11,0.07);
+            border: 1px solid rgba(245,158,11,0.25);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            font-size: 0.82rem;
+            color: #fbbf24;
+            line-height: 1.6;
+        }
+
+        .cors-warning strong { display: block; margin-bottom: 4px; font-size: 0.85rem; }
+
+        /* ─── CONTACT ─── */
+        .contact-section {
+            position: relative;
+            z-index: 1;
+            padding: 64px 24px;
+            border-top: 1px solid var(--border-subtle);
+            background: linear-gradient(180deg, transparent 0%, rgba(99,102,241,0.04) 100%);
+        }
+
+        .contact-inner {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .contact-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 16px;
+            border-radius: 100px;
+            background: rgba(99,102,241,0.1);
+            border: 1px solid rgba(99,102,241,0.25);
+            color: var(--text-accent);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        .contact-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            font-weight: 700;
+            background: linear-gradient(130deg, #f1f5f9 0%, #a5b4fc 55%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            line-height: 1.25;
+        }
+
+        .contact-section p.contact-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-group label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-sm);
+            padding: 12px 16px;
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s ease, background 0.2s ease;
+            width: 100%;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-muted);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: rgba(99,102,241,0.5);
+            background: rgba(99,102,241,0.05);
+        }
+
+        .form-group input[aria-invalid="true"],
+        .form-group textarea[aria-invalid="true"] {
+            border-color: rgba(239,68,68,0.5);
+            background: rgba(239,68,68,0.04);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+
+        .form-error {
+            font-size: 0.72rem;
+            color: #f87171;
+            margin-top: 2px;
+        }
+
+        .form-success-msg {
+            background: rgba(34,197,94,0.08);
+            border: 1px solid rgba(34,197,94,0.25);
+            border-radius: var(--radius-sm);
+            padding: 20px 24px;
+            color: #4ade80;
+            font-size: 0.92rem;
+            line-height: 1.65;
+            display: none;
+        }
+
+        .form-success-msg.show { display: block; }
+
+        .form-error-banner {
+            background: rgba(239,68,68,0.07);
+            border: 1px solid rgba(239,68,68,0.2);
+            border-radius: var(--radius-sm);
+            padding: 14px 18px;
+            color: #f87171;
+            font-size: 0.85rem;
+            display: none;
+        }
+
+        .form-error-banner.show { display: block; }
+
+        .btn-submit {
+            align-self: flex-start;
+            padding: 13px 32px;
+            border-radius: var(--radius-sm);
+            border: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            color: white;
+            transition: all 0.25s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-submit:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(99,102,241,0.5);
+        }
+
+        .btn-submit:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* ─── FOOTER ─── */
+        footer {
+            position: relative;
+            z-index: 1;
+            padding: 28px 24px;
+            text-align: center;
+            border-top: 1px solid var(--border-subtle);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--text-accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        footer a:hover { color: #c084fc; }
+
+        @media (max-width: 560px) {
+            .form-row { grid-template-columns: 1fr; }
+            .btn-submit { width: 100%; justify-content: center; }
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 640px) {
+            header { padding: 44px 16px 30px; }
+            main { padding: 28px 14px 48px; }
+            .grid { gap: 16px; }
+            .card-cover-link { height: 240px; }
+            .header-stats { gap: 24px; }
+            .modal-header, .modal-body { padding: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-badge">📚 &nbsp; Akademik Kaynak Arşivi</div>
+    <h1>Okul Saldırıları ve Şiddet:<br>Travma Odaklı Literatür</h1>
+    <p>Okul saldırıları, kitlesel şiddet ve toplumsal travma konusunda derlenmiş akademik kitap koleksiyonu</p>
+    <div class="header-credit">
+        <a href="http://www.travmaduyarli.com" target="_blank" rel="noopener">www.travmaduyarli.com</a> tarafından hazırlanmıştır
+    </div>
+</header>
+
+<main>
+    <div class="grid" id="books-grid"></div>
+</main>
+
+<!-- İletişim Bölümü -->
+<section class="contact-section" id="iletisim">
+    <div class="contact-inner">
+        <div class="contact-badge">✉️ &nbsp; İletişim</div>
+        <h2>Görüş ve Önerilerinizi Paylaşın</h2>
+        <p class="contact-desc">
+            Bu kaynak listesi hakkındaki görüş ve önerilerinizi bizimle paylaşabilirsiniz.
+            Eksik gördüğünüz kaynaklar, özet düzeltmeleri ya da genel geri bildirimleriniz
+            için aşağıdaki formu kullanabilirsiniz — her mesaj değerlidir.
+        </p>
+
+        <div class="form-success-msg" data-fs-success id="contact-success">
+            ✅ &nbsp; Mesajınız iletildi, teşekkür ederiz! En kısa sürede dönüş yapacağız.
+        </div>
+        <div class="form-error-banner" data-fs-error id="contact-error">
+            ⚠️ &nbsp; Bir sorun oluştu. Lütfen tekrar deneyin.
+        </div>
+
+        <form class="contact-form" id="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="contact-name">Ad Soyad</label>
+                    <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        placeholder="Adınız Soyadınız"
+                        data-fs-field
+                        required
+                    >
+                    <span class="form-error" data-fs-error="name"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">E-posta</label>
+                    <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        placeholder="ornek@email.com"
+                        data-fs-field
+                        required
+                    >
+                    <span class="form-error" data-fs-error="email"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contact-message">Mesajınız</label>
+                <textarea
+                    id="contact-message"
+                    name="message"
+                    placeholder="Görüş, öneri veya katkılarınızı buraya yazabilirsiniz..."
+                    data-fs-field
+                    required
+                ></textarea>
+                <span class="form-error" data-fs-error="message"></span>
+            </div>
+            <button type="submit" class="btn-submit" data-fs-submit-btn id="contact-submit">
+                <span>Gönder</span>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+            </button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <a href="http://www.travmaduyarli.com" target="_blank" rel="noopener">www.travmaduyarli.com</a> tarafından hazırlanmıştır
+</footer>
+
+<!-- Modal -->
+<div class="modal-backdrop" id="modal" onclick="onBackdropClick(event)">
+    <div class="modal-panel" id="modal-panel">
+        <div class="modal-header">
+            <div class="modal-icon" id="modal-icon">📖</div>
+            <div class="modal-titles">
+                <div class="modal-type-label" id="modal-type-label">Özet</div>
+                <div class="modal-book-title" id="modal-book-title">—</div>
+                <div class="modal-book-tr" id="modal-book-tr">—</div>
+            </div>
+            <button class="modal-close" onclick="closeModal()" aria-label="Kapat">✕</button>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+    </div>
+</div>
+
+<script>
+    /* ═══════════════════════════════════════════════
+       KİTAP VERİTABANI
+    ═══════════════════════════════════════════════ */
+    const books = [
+        {
+            key: "critical_mass",
+            title: "Critical Mass: Understanding and Fixing the Social Roots of Mass Shootings in the United States",
+            titleTR: "Kritik Kitle: ABD'deki Toplu Silahlı Saldırıların Sosyal Köklerini Anlamak ve Çözüm Üretmek",
+            author: "Dinur Blum",
+            year: "2021",
+            cover: "kapaklar/Critical Mass Understanding and Fixing the Social Roots of Mass Shootings in the United States - Dinur Blum.jpg"
+        },
+        {
+            key: "examining_mass_shootings",
+            title: "Examining Mass Shootings",
+            titleTR: "Toplu Silahlı Saldırıları İncelemek",
+            author: "Lisa M. Bolt Simons",
+            year: "2018",
+            cover: "kapaklar/Examining Mass Shootings - Lisa M. Bolt Simons.jpg"
+        },
+        {
+            key: "homeland_insecurity",
+            title: "Homeland Insecurity: Terrorism, Mass Shootings and the Public",
+            titleTR: "Yurt İçi Güvensizlik: Terörizm, Toplu Saldırılar ve Kamu",
+            author: "Ann Gordon",
+            year: "2021",
+            cover: "kapaklar/Homeland Insecurity Terrorism, Mass Shootings and the Public - Ann Gordon.jpg"
+        },
+        {
+            key: "how_to_stop_school_rampage",
+            title: "How to Stop School Rampage Killing: Lessons from Averted Mass Shootings and Bombings (2nd Ed.)",
+            titleTR: "Okul Katliamı Öldürmeleri Nasıl Durdurulur: Önlenen Saldırılardan Alınan Dersler",
+            author: "Eric Madfis",
+            year: "2020",
+            cover: "kapaklar/How to Stop School Rampage Killing Lessons from Averted Mass Shootings and Bombings (2nd Edition) - Eric Madfis.jpg"
+        },
+        {
+            key: "mass_shootings_gitlin",
+            title: "Mass Shootings",
+            titleTR: "Toplu Silahlı Saldırılar",
+            author: "Martin Gitlin (Ed.)",
+            year: "2018",
+            cover: "kapaklar/Mass shootings - Martin Gitlin.jpg"
+        },
+        {
+            key: "mass_shootings_media_myths",
+            title: "Mass Shootings: Media, Myths, and Realities",
+            titleTR: "Toplu Silahlı Saldırılar: Medya, Efsaneler ve Gerçekler",
+            author: "Jaclyn Schildkraut, H. Jaymi Elsass",
+            year: "2016",
+            cover: "kapaklar/Mass Shootings Media, Myths, and Realities - Jaclyn Schildkraut.jpg"
+        },
+        {
+            key: "school_shooters",
+            title: "School Shooters: Understanding High School, College, and Adult Perpetrators",
+            titleTR: "Okul Saldırganları: Lise, Üniversite ve Yetişkin Failleri Anlamak",
+            author: "Peter Langman",
+            year: "2015",
+            cover: "kapaklar/School Shooters Understanding High School, College, and Adult Perpetrators - Peter Langman.jpg"
+        },
+        {
+            key: "shared_experiences",
+            title: "Shared Experiences of Mass Shootings",
+            titleTR: "Toplu Silahlı Saldırıların Ortak Deneyimleri",
+            author: "Johanna Nurmi",
+            year: "2022",
+            cover: "kapaklar/Shared Experiences of Mass Shootings - Johanna Nurmi.jpg"
+        },
+        {
+            key: "stop_the_killing",
+            title: "Stop the Killing: How to End the Mass Shooting Crisis",
+            titleTR: "Öldürmeyi Durdurun: Toplu Silahlı Saldırı Krizini Nasıl Sonlandırırız",
+            author: "Katherine Schweit",
+            year: "2021",
+            cover: "kapaklar/Stop the Killing How to End the Mass Shooting Crisis - Katherine Schweit.jpg"
+        },
+        {
+            key: "psychology_extreme_violence",
+            title: "The Psychology of Extreme Violence: A Case Study Approach to Serial Homicide, Mass Shooting, School Shooting and Lone-actor Terrorism",
+            titleTR: "Aşırı Şiddetin Psikolojisi: Seri Cinayetten Okul Saldırılarına Vaka Analizi",
+            author: "Clare S. Allely",
+            year: "2020",
+            cover: "kapaklar/The Psychology of Extreme Violence A Case Study Approach to Serial Homicide, Mass Shooting, School Shooting and Lone-actor… - Clare S. Allely.jpg"
+        },
+        {
+            key: "violence_project",
+            title: "The Violence Project: How to Stop a Mass Shooting Epidemic",
+            titleTR: "Şiddet Projesi: Toplu Silahlı Saldırı Salgınını Nasıl Durdururuz",
+            author: "Jillian Peterson",
+            year: "2021",
+            cover: "kapaklar/The Violence Project How to Stop a Mass Shooting Epidemic - Jillian Peterson.jpg"
+        },
+        {
+            key: "thinking_critically_nakaya",
+            title: "Thinking Critically: Mass Shootings",
+            titleTR: "Eleştirel Düşünme: Toplu Silahlı Saldırılar",
+            author: "Andrea C. Nakaya",
+            year: "2015",
+            cover: "kapaklar/Thinking critically  mass shootings - Nakaya, Andrea C..jpg"
+        },
+        {
+            key: "thinking_critically_currie",
+            title: "Thinking Critically: Mass Shootings",
+            titleTR: "Eleştirel Düşünme: Toplu Silahlı Saldırılar (Currie)",
+            author: "Stephen Currie",
+            year: "2018",
+            cover: "kapaklar/Thinking Critically Mass Shootings - Stephen Currie.jpg"
+        },
+        {
+            key: "children_who_survived",
+            title: "Children Who Survived a School Shooting and Chose to Teach: The Case of Columbine",
+            titleTR: "Okul Saldırısından Kurtulan ve Öğretmen Olmayı Seçen Çocuklar: Columbine Vakası",
+            author: "Michelle Markert-Porter",
+            year: "2021",
+            cover: "kapaklar/Children Who Survived a School Shooting and Chose to Teach The Case of Columbine, Navigating Shared Trauma, and the Ethics of… - Michelle Markert-Porter.jpg"
+        },
+        {
+            key: "if_i_dont_make_it",
+            title: "If I Don't Make It, I Love You: Survivors in the Aftermath of School Shootings",
+            titleTR: "Eğer Dönemezsem, Seni Seviyorum: Okul Saldırılarından Sonra Hayatta Kalanlar",
+            author: "Amye Archer",
+            year: "2019",
+            cover: "kapaklar/If I Dont Make It, I Love You Survivors in the Aftermath of School Shootings - Amye Archer.jpg"
+        },
+        {
+            key: "fictional_dimension",
+            title: "The Fictional Dimension of the School Shooting Discourse: Approaching the Inexplicable",
+            titleTR: "Okul Saldırısı Söyleminin Kurmaca Boyutu: Açıklanamaz Olana Yaklaşmak",
+            author: "Silke Braselmann",
+            year: "2019",
+            cover: "kapaklar/The Fictional Dimension of the School Shooting Discourse Approaching the Inexplicable - Silke Braselmann.jpg"
+        },
+        {
+            key: "dealing_with_school_shootings",
+            title: "Dealing with School Shootings",
+            titleTR: "Okul Saldırılarıyla Başa Çıkmak",
+            author: "Kate Shoup",
+            year: "2008",
+            cover: "kapaklar/Dealing with School Shootings - Kate Shoup.jpg"
+        },
+        {
+            key: "thinking_critically_allen",
+            title: "Thinking Critically: School Shootings and Violence",
+            titleTR: "Eleştirel Düşünme: Okul Saldırıları ve Şiddet",
+            author: "John Allen",
+            year: "2015",
+            cover: "kapaklar/Thinking Critically School Shootings and Violence - John Allen.jpg"
+        },
+        {
+            key: "school_shootings_how_stop",
+            title: "School Shootings: How Can We Stop Them?",
+            titleTR: "Okul Saldırıları: Bunları Nasıl Durdurabiliriz?",
+            author: "Bilinmiyor",
+            year: "Bilinmiyor",
+            cover: "kapaklar/School shootings  how can we stop them - NewYork Times.jpg"
+        }
+    ];
+
+    /* ═══════════════════════════════════════════════
+       KART OLUŞTURMA
+    ═══════════════════════════════════════════════ */
+    const grid = document.getElementById('books-grid');
+
+    const getAmazonUrl = (b) => {
+        const q = encodeURIComponent(b.title + (b.author !== 'Bilinmiyor' ? ' ' + b.author : ''));
+        return `https://www.amazon.com/s?k=${q}`;
+    };
+
+    books.forEach((book, idx) => {
+        const card = document.createElement('div');
+        card.className = 'book-card';
+        card.style.animationDelay = `${idx * 0.04}s`;
+
+        const amazonUrl = getAmazonUrl(book);
+        const coverSrc = book.cover;
+
+        card.innerHTML = `
+            <a class="card-cover-link" href="${amazonUrl}" target="_blank" rel="noopener" title="Amazon'da Satın Al">
+                <img id="cover-${idx}" src="${coverSrc}" alt="${book.title} kapak görseli" loading="lazy">
+                <div class="cover-overlay">
+                    🛒 &nbsp; Amazon'da Satın Al
+                </div>
+            </a>
+            <div class="card-body">
+                <div class="card-title-en">${book.title}</div>
+                <div class="card-title-tr">${book.titleTR}</div>
+                <div class="divider"></div>
+                <div class="card-meta">
+                    <span class="meta-chip" title="${book.author}">${book.author}</span>
+                    <span class="meta-chip year">${book.year}</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-short" onclick="openModal(${idx}, 'kisa')" id="btn-short-${idx}">
+                        ⚡ Kısa Özet
+                    </button>
+                    <button class="btn btn-long" onclick="openModal(${idx}, 'uzun')" id="btn-long-${idx}">
+                        📖 Uzun Özet
+                    </button>
+                </div>
+            </div>
+        `;
+
+        grid.appendChild(card);
+
+    });
+
+    /* ═══════════════════════════════════════════════
+       MODAL SİSTEMİ
+    ═══════════════════════════════════════════════ */
+    let corsWarningShown = false;
+
+    async function openModal(bookIdx, type) {
+        const book = books[bookIdx];
+        const isShort = type === 'kisa';
+
+        // Header bilgilerini doldur
+        const iconEl = document.getElementById('modal-icon');
+        const labelEl = document.getElementById('modal-type-label');
+
+        iconEl.textContent   = isShort ? '⚡' : '📖';
+        iconEl.className     = `modal-icon ${isShort ? 'short' : 'long'}`;
+        labelEl.textContent  = isShort ? 'Kısa Özet' : 'Uzun / Detaylı Özet';
+        labelEl.className    = `modal-type-label ${isShort ? 'short' : 'long'}`;
+        document.getElementById('modal-book-title').textContent = book.title;
+        document.getElementById('modal-book-tr').textContent    = book.titleTR;
+
+        // Yükleniyor animasyonu
+        document.getElementById('modal-body').innerHTML = `
+            <div class="loading-dots">
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+            </div>
+        `;
+
+        // Modal'ı göster
+        const backdrop = document.getElementById('modal');
+        backdrop.classList.add('visible');
+        document.body.style.overflow = 'hidden';
+
+        // Dosya adı
+        const fileName = isShort
+            ? `ozetler/${book.key}_kisa_ozet.txt`
+            : `ozetler/${book.key}_ozet.txt`;
+
+        try {
+            const resp = await fetch(fileName);
+            if (resp.ok) {
+                const text = await resp.text();
+                const paras = text.split(/\n\n+/).filter(p => p.trim());
+                if (paras.length === 0) {
+                    showNoSummary(fileName, book.key, isShort);
+                } else {
+                    document.getElementById('modal-body').innerHTML =
+                        paras.map(p => `<p>${p.trim().replace(/\n/g, '<br>')}</p>`).join('');
+                }
+            } else {
+                showNoSummary(fileName, book.key, isShort);
+            }
+        } catch (err) {
+            // CORS veya dosya bulunamadı
+            const isCorsProblem = err instanceof TypeError;
+            let html = '';
+            if (isCorsProblem && !corsWarningShown) {
+                corsWarningShown = true;
+                html += `
+                    <div class="cors-warning">
+                        <strong>⚠️ Sunucu Gerekli</strong>
+                        Özetler yerel bir HTTP sunucusundan yüklenmelidir.
+                        <code>CALISTIR.bat</code> dosyasını çalıştırarak sunucuyu başlatın,
+                        ardından tarayıcıda <code>http://localhost:8080</code> adresini açın.
+                    </div>
+                `;
+            }
+            html += showNoSummaryHTML(fileName, book.key, isShort);
+            document.getElementById('modal-body').innerHTML = html;
+        }
+    }
+
+    function showNoSummaryHTML(fileName, bookKey, isShort) {
+        const txtFile = isShort ? `${bookKey}_kisa_ozet.txt` : `${bookKey}_ozet.txt`;
+        return `
+            <div class="no-summary">
+                <div class="ns-icon">📝</div>
+                <div class="ns-title">Özet henüz eklenmemiş</div>
+                <div class="ns-desc">
+                    Bu kitap için ${isShort ? 'kısa' : 'detaylı'} özet dosyası mevcut değil veya içerik boş.<br>
+                    Aşağıdaki dosyayı oluşturun ve özet metni ekleyin:
+                </div>
+                <div class="ns-file">ozetler/${txtFile}</div>
+            </div>
+        `;
+    }
+
+    function showNoSummary(fileName, bookKey, isShort) {
+        document.getElementById('modal-body').innerHTML = showNoSummaryHTML(fileName, bookKey, isShort);
+    }
+
+    function closeModal() {
+        const backdrop = document.getElementById('modal');
+        backdrop.classList.remove('visible');
+        document.body.style.overflow = '';
+    }
+
+    function onBackdropClick(e) {
+        if (e.target === document.getElementById('modal')) closeModal();
+    }
+
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeModal();
+    });
+</script>
+
+<!-- Formspree Ajax — İletişim Formu -->
+<script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contact-form', formId: 'xojykoen' });
+
+    // Başarı ve hata mesajlarını .show class ile göster
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('contact-form');
+        const successEl = document.getElementById('contact-success');
+        const errorEl   = document.getElementById('contact-error');
+
+        if (form) {
+            const observer = new MutationObserver(() => {
+                if (successEl && successEl.style.display !== 'none' && successEl.innerText.trim()) {
+                    successEl.classList.add('show');
+                    form.style.display = 'none';
+                }
+                if (errorEl && errorEl.style.display !== 'none' && errorEl.innerText.trim()) {
+                    errorEl.classList.add('show');
+                }
+            });
+            observer.observe(document.getElementById('iletisim'), { childList: true, subtree: true, attributes: true, characterData: true });
+        }
+    });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
